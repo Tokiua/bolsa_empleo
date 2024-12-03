@@ -28,7 +28,7 @@
     @extends('layout.app')
     @section('tittle', 'menu')
     @section('content')
-    
+
     <!-- Sección principal con la bienvenida -->
     <div class="hero-section">
         <div class="container">
@@ -139,7 +139,7 @@
     <!-- Pie de página -->
     <div class="footer">
         <p>© 2024 Bolsa de Empleo - Todos los derechos reservados</p>
-        <a href="{{ route('empleos.index') }}" class="btn btn-light">Ver todas las ofertas</a>
+        <a href="{{ route('empleos.showempleo') }}" class="btn btn-light">Ver todas las ofertas</a>
     </div>
     @endsection
 
