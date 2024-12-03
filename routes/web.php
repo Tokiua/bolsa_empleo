@@ -8,7 +8,8 @@ Route::get('/', function () {
 
 use App\Http\Controllers\EmpleoController;
 
-//oferta de trabajo
+////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/////////////////////////////oferta de trabajo//////////////////////////
 // Ruta para mostrar todos los empleos
 Route::get('/empleo/showempleo', [EmpleoController::class, 'index'])->name('empleos.showempleo');
 
@@ -27,4 +28,18 @@ Route::put('/empleo/{id}', [EmpleoController::class, 'update'])->name('empleo.up
 
 // Ruta para eliminar una oferta de trabajo
 Route::delete('/empleo/{id}', [EmpleoController::class, 'destroy'])->name('empleo.destroy');
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////habilidades//////////////////////
+use App\Http\Controllers\HabilidadController;
+
+Route::get('/habilidades', [HabilidadController::class, 'index'])->name('habilidades.index');
+Route::get('/habilidades/create', [HabilidadController::class, 'create'])->name('habilidades.create');
+Route::post('/habilidades', [HabilidadController::class, 'store'])->name('habilidades.store');
+Route::get('/habilidades/{id}/edit', [HabilidadController::class, 'edit'])->name('habilidades.edit');
+Route::put('/habilidades/{id}', [HabilidadController::class, 'update'])->name('habilidades.update');
+Route::delete('/habilidades/{id}', [HabilidadController::class, 'destroy'])->name('habilidades.destroy');
+
+
+
+
 

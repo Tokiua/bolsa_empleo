@@ -1,3 +1,5 @@
+<!-- resources/views/layouts/app.blade.php -->
+
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -21,6 +23,10 @@
                     <!-- Opción de Empleos -->
                     <li class="nav-item">
                         <a class="nav-link" href="/empleo/showempleo">Empleos</a>
+                    </li>
+                    <!-- Opción de Habilidades -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/habilidades">Habilidades</a>
                     </li>
                 </ul>
             </div>
