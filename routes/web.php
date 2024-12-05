@@ -40,6 +40,26 @@ Route::put('/habilidades/{id}', [HabilidadController::class, 'update'])->name('h
 Route::delete('/habilidades/{id}', [HabilidadController::class, 'destroy'])->name('habilidades.destroy');
 
 
+///////////////////////////////////////////////////////////////////////////////////////////////////
+////////////////empresas//////////////////////
 
 
+use App\Http\Controllers\EmpresaController;
 
+
+Route::get('/empresas/show', [EmpresaController::class, 'index'])->name('empresas.show'); 
+
+
+// Ruta para mostrar el formulario de creación de empresa
+Route::get('empresas/create', [EmpresaController::class, 'create'])->name('empresas.create');
+
+// Ruta para guardar la empresa (POST)
+Route::post('empresas', [EmpresaController::class, 'store'])->name('empresas.store');
+
+Route::get('/empresas/{id}/edit', [EmpresaController::class, 'edit'])->name('empresas.edit');
+
+// Ruta para actualizar una empresa (update)
+Route::put('/empresas/{id}', [EmpresaController::class, 'update'])->name('empresas.update');
+
+// Ruta para eliminar una empresa (destroy)
+Route::delete('/empresas/{id}', [EmpresaController::class, 'destroy'])->name('empresas.destroy');

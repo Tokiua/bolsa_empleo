@@ -27,6 +27,9 @@
                     <!-- Opción de Habilidades -->
                     <li class="nav-item">
                         <a class="nav-link" href="/habilidades">Habilidades</a>
+                    </li><!-- Opción de empresas -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/empresas/show">Empresa</a>
                     </li>
                 </ul>
             </div>
