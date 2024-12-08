@@ -14,7 +14,7 @@
     {{-- Menú con la única opción de "Empleos" --}}
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark mb-4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Inventario</a>
+            <a class="navbar-brand" href="">Inventario</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
